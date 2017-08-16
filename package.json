@@ -1,6 +1,11 @@
 {
   "name": "re13",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JeffRisberg/RE13"
+  },
+  "license": "MIT",
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
