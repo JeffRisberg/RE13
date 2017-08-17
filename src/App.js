@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux'
 import logo from './logo.svg';
 import './App.css';
 import TodoForm from './components/TodoForm'
@@ -14,17 +13,12 @@ class App extends Component {
                     <h2>Welcome to React with Redux</h2>
                 </div>
                 <div className="Todo-App">
-                    <TodoForm
-                        currentTodo={this.props.currentTodo}
-                        changeCurrent={this.props.changeCurrent}
-                    />
-                    <TodoList todos={this.props.todos} />
+                    <TodoForm />
+                    <TodoList />
                 </div>
             </div>
         );
     }
 }
 
-const mapStateToProps = (state) => state
-const ConnectedApp = connect(mapStateToProps)(App)
-export default ConnectedApp
+export default App
